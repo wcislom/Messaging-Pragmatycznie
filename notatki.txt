@@ -3,3 +3,8 @@
 Flow synchroniczne z aplikacji
 
 Actor ---> /inquiries/submit ---> Translations (traslate inquiry) ---> Tickets (create ticket) ---> Actor
+
+2. Fallacies of distributed computing
+
+3. Jakie s¹ problemy z synchronicznym flow?
+- opó¿nienia na poszczególnych callach spowalnia ca³e flow. Czekanie do 3s jest jeszcze akceptowalne
