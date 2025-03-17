@@ -1,0 +1,5 @@
+1. Komunikacja synchroniczna to nie to samo co programowanie synchroniczne.
+
+Flow synchroniczne z aplikacji
+
+Actor ---> /inquiries/submit ---> Translations (traslate inquiry) ---> Tickets (create ticket) ---> Actor
