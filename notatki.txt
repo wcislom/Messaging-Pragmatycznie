@@ -8,3 +8,7 @@ Actor ---> /inquiries/submit ---> Translations (traslate inquiry) ---> Tickets (
 
 3. Jakie s¹ problemy z synchronicznym flow?
 - opó¿nienia na poszczególnych callach spowalnia ca³e flow. Czekanie do 3s jest jeszcze akceptowalne
+- bledy na poszczególnych etapach powoduj¹, ¿e dane s¹ niespójne, a ca³u Use Case nie dzia³a
+- niedostêpnoœæ jednej us³ugi w ³añcuchu powoduje, ¿e Use Case nie dzia³a
+- miêdzy us³ugami jest ciasna powi¹zanie (coupling), bo trzeba wiedzieæ jakie us³ugi i w jakiej kolejnoœci odpytywaæ.
+- hardcodowane adresy i porty uniemo¿liwiaj¹ skalowanie
