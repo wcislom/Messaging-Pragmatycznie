@@ -16,3 +16,8 @@ Actor ---> /inquiries/submit ---> Translations (traslate inquiry) ---> Tickets (
 4. Komunikacja Asynchroniczna
 - dobr¹ analogi¹ jest poczta
 - nie wymaga dostêpnoœci ani gotowoœci odbiorcy, ¿eby siê powiod³a.
+
+Scenariusze komunikacji:
+1 - 1 - Direct (bezpoœrednia)
+1 - n - Pub-Sub, odbiorcy oczekuj¹ swojej kopii komunikatu
+
