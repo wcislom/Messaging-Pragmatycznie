@@ -16,8 +16,16 @@ Actor ---> /inquiries/submit ---> Translations (traslate inquiry) ---> Tickets (
 4. Komunikacja Asynchroniczna
 - dobr¹ analogi¹ jest poczta
 - nie wymaga dostêpnoœci ani gotowoœci odbiorcy, ¿eby siê powiod³a.
+- istnieje poœrednik, o którym wiedz¹ nadawcy i odbiorcy
+	Zalety:
+	- wystarczy znaæ jeden adres, prostsza konfiguracja
+	Wady:
+	- single point of failure, jak siê wy³o¿y, to game over
+	- mo¿e siê przytykaæ przy du¿ym obci¹¿eniu, wiêc system bêdzie wolny
 
 Scenariusze komunikacji:
 1 - 1 - Direct (bezpoœrednia)
 1 - n - Pub-Sub, odbiorcy oczekuj¹ swojej kopii komunikatu
+
+Do rozwi¹zania wyzwañ komunikacji asynchronicznej powsta³y Message Brokery. Smart Broker, Dumb Consumer
 
