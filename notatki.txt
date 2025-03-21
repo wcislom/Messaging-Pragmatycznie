@@ -29,3 +29,8 @@ Scenariusze komunikacji:
 
 Do rozwi¹zania wyzwañ komunikacji asynchronicznej powsta³y Message Brokery. Smart Broker, Dumb Consumer
 
+5. Rabbit MQ i AMQP
+- Rabbit jest dojrza³y, oparty na protokole AMQP
+- w protokole AMQP podstawow¹ jednostk¹ danych jest ramka, jest ich 9
+-
+
