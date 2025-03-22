@@ -32,7 +32,7 @@ Do rozwi¹zania wyzwañ komunikacji asynchronicznej powsta³y Message Brokery. Smar
 5. Rabbit MQ i AMQP
 - Rabbit jest dojrza³y, oparty na protokole AMQP
 - w protokole AMQP podstawow¹ jednostk¹ danych jest ramka, jest ich 9
--
+- AMQP to protokó³ programowalny
 
 Bulding blocki Rabbit MQ
 - po³¹czenia s¹ kosztowone
@@ -44,6 +44,8 @@ Bulding blocki Rabbit MQ
 - producent i konsument nie wiedz¹ o sobie nic
 
 Programista musi umieæ zaprojektowaæ drogê komunikatów (od producenta do konsumenta), czyli stworzyæ topologiê.
+
+Topologia to sposób po³¹czeñ ró¿nych elementów
 
 Porty
 	- 5672:5672 = komunikacja AMQP
