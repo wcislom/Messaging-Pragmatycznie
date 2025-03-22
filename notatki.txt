@@ -34,3 +34,12 @@ Do rozwi¹zania wyzwañ komunikacji asynchronicznej powsta³y Message Brokery. Smar
 - w protokole AMQP podstawow¹ jednostk¹ danych jest ramka, jest ich 9
 -
 
+Bulding blocki Rabbit MQ
+- po³¹czenia s¹ kosztowone
+- w ramach po³¹czenia jest wiele channeli (lekkich po³¹czeñ), np. jednego per handler/kolejka
+- channele s¹ powo³ywane do ¿ycia, a po pracy s¹ zamykane
+- producent wysy³a wiadomoœæ do Exchenga
+- konsumenci pod³¹czaj¹ siê do kolejek
+- binding - definicja regu³ trasowania - exchange na podstawie routingu wie, do jakiej kolejki przekazaæ wiadomoœæ
+- producent i konsument nie wiedz¹ o sobie nic
+
