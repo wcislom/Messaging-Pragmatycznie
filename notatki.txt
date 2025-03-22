@@ -43,3 +43,9 @@ Bulding blocki Rabbit MQ
 - binding - definicja regu³ trasowania - exchange na podstawie routingu wie, do jakiej kolejki przekazaæ wiadomoœæ
 - producent i konsument nie wiedz¹ o sobie nic
 
+Programista musi umieæ zaprojektowaæ drogê komunikatów (od producenta do konsumenta), czyli stworzyæ topologiê.
+
+Porty
+	- 5672:5672 = komunikacja AMQP
+	- 15672:15672 - ui
+	- 15692:15692 - metryki dla Prometheusa
