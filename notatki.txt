@@ -51,3 +51,16 @@ Porty
 	- 5672:5672 = komunikacja AMQP
 	- 15672:15672 - ui
 	- 15692:15692 - metryki dla Prometheusa
+
+6. Po³¹czenie
+
+- Virtual Host
+
+Po³¹czenie powinny byæ jedno per aplikacja, bo jest drogie.
+Kana³ dzia³a w ramach jednego po³¹czenia, jest tañszy do utworzenia. 
+ - powinien byæ d³ugo ¿yj¹cy
+ - nie jest Thread Safe
+ - daje API do komunikacji
+
+
+V-Host-  sposób logicznego separowania konfiguracji w ramach jednej instajci Rabbita. Np. ka¿da aplikacja ma swój VHost, albo ka¿de œrodowisko. To co jest w VHost jest niedostêpne w innym VHost, wiêc logicznie siê separujemy od reszty.
