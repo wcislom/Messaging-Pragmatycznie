@@ -31,7 +31,7 @@ internal sealed class AssignAgentToTicketHandler(ITicketsRepository repository, 
 
     private async Task PublishAgentAssigned(AssignAgentToTicket command, CancellationToken cancellationToken, Ticket ticket)
     {
-        var ticketStatusChanged = new AgentAssignedToTicket(command.TicketId, ticket.Version);
+        var ticketStatusChanged = new AgentAssignedToTicket(command.TicketId, ticket.Version, command.AgentId);
         await publisher.PublishAsync(
             message: ticketStatusChanged, 
             routingKey: "agent-assigned", 
